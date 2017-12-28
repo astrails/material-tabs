@@ -27,10 +27,12 @@
   ],
   "homepage": "https://github.com/oliverfencott/material-tabs#readme",
   "peerDependencies": {
-    "react": "*",
-    "prop-types": "*"
+    "prop-types": "*",
+    "react": "*"
   },
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "babel-plugin-transform-es2015-destructuring": "^6.18.0",
     "babel-plugin-transform-object-rest-spread": "^6.16.0",
     "babel-preset-es2015": "^6.14.0",

@@ -28,9 +28,9 @@ const Style = {
   }
 };
 
-const Tab = ({ children, onClick, style }) => {
+const Tab = ({ children, onClick, style, className }) => {
   return (
-    <div style={Style.container} onClick={onClick}>
+    <div style={Style.container} onClick={onClick} className={ className }>
       <div style={{ ...Style.textContainer, ...style }}>
         {children}
       </div>
@@ -40,12 +40,14 @@ const Tab = ({ children, onClick, style }) => {
 
 Tab.propTypes = {
   style: PropTypes.object,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  className: PropTypes.string
 };
 
 Tab.defaultProps = {
   style: {},
-  onClick: emptyFunc
+  onClick: emptyFunc,
+  className: null
 };
 
 export default Tab;
